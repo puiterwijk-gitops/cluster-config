@@ -1,0 +1,5 @@
+resources:
+  - namespace.yaml
+  - operatorconfig.yaml
+  - podmonitor.yaml
+  - prometheusrule.yaml
