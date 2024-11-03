@@ -8,7 +8,7 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
     - git:
-        repoURL: https://github.com/puiterwijk-gitops/cluster-config.ti
+        repoURL: https://github.com/puiterwijk-gitops/cluster-config.git
         revision: HEAD
         directories:
           - path: overlays/*
