@@ -25,6 +25,7 @@ spec:
           valuesObject:
             clusterName: "{{ .name }}"
             clusterDomain: "{{ .domain }}"
+            clusterAcmName: "{{ .acm_name }}"
       destination:
         name: in-cluster
         namespace: open-cluster-management
