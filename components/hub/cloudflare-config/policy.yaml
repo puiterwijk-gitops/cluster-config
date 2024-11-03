@@ -23,8 +23,9 @@ spec:
               objectDefinition:
                 apiVersion: v1
                 kind: secret
+                type: Opaque
                 metadata:
                   name: cloudflare-token
                   namespace: default
                 data:
-                  api-token: '{{hub fromSecret "acm-policies" "cloudflare-token" "api-token" hub}}'
+                  api-token: '{{hub (lookup "v1" "Secret" "acm-policies" "cloudflare-token").data.api-token | protect hub}}'
