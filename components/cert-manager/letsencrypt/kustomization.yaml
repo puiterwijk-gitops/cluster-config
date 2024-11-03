@@ -1,2 +1,2 @@
 resources:
-  - issuer.yaml
+  - issuer-staging.yaml
