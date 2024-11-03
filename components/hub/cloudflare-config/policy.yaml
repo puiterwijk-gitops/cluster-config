@@ -26,6 +26,6 @@ spec:
                 type: Opaque
                 metadata:
                   name: cloudflare-token
-                  namespace: default
+                  namespace: cert-manager-issuers
                 data:
                   api-token: '{{hub fromSecret "acm-policies" "cloudflare-token" "apitoken" hub}}'

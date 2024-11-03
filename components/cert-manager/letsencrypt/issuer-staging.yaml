@@ -7,12 +7,12 @@ spec:
     email: patrick@puiterwijk.org
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
-      name: letsencrypt-account-key
-      namespace: default
+      name: letsencrypt-staging-account-key
+      namespace: cert-manager-issuers
     solvers:
       - dns01:
           cloudflare:
             apiTokenSecretRef:
               name: cloudflare-token
-              namespace: default
+              namespace: cert-manager-issuers
               key: api-token
