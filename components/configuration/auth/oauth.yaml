@@ -9,7 +9,7 @@ spec:
       type: OpenID
       openID:
         issuer: https://sso.puiterwijk.org/realms/services
-        clientID: openshift
+        clientID: "openshift-${CLUSTER_NAME}"
         clientSecret:
           name: oidc-client-info
         extraScopes:
@@ -24,4 +24,4 @@ spec:
           email:
             - email
           groups:
-            - groups
+            - roles
