@@ -8,10 +8,10 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
     - git:
-        repoURL: https://github.com/puiterwijk-gitops/cluster-config.git
+        repoURL: https://github.com/puiterwijk-gitops/clusters.git
         revision: HEAD
-        directories:
-          - path: bootstrap/overlays/*
+        files:
+          - path: "*.yaml"
   template:
     metadata:
       name: "vault-config-{{ .path.basename }}"
@@ -23,7 +23,8 @@ spec:
         path: vault-config/
         helm:
           valuesObject:
-            clusterName: "{{ .path.basename }}"
+            clusterName: "{{ .name }}"
+            clusterDomain: "{{ .domain }}"
       destination:
         name: in-cluster
         namespace: open-cluster-management
