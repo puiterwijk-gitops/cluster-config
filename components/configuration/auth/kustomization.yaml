@@ -1,0 +1,2 @@
+resources:
+  - oidc_secret.yaml
