@@ -1,0 +1,3 @@
+resources:
+  - appset.yaml
+  - namespace.yaml

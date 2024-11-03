@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: vault-configs
+  namespace: openshift-gitops
+spec:
+  goTemplate: true
+  goTemplateOptions: ["missingkey=error"]
+  generators:
+    - git:
+        repoURL: https://github.com/puiterwijk-gitops/cluster-config.ti
+        revision: HEAD
+        directories:
+          - path: overlays/*
+  template:
+    metadata:
+      name: "vault-config-{{ .path.basename }}"
+    spec:
+      project: default
+      sources:
+        - repoURL: https://github.com/puiterwijk-gitops/helm-charts.git
+          targetRevision: HEAD
+          path: vault-config/
+      destination:
+        name: in-cluster
+        namespace: vault-config
