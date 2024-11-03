@@ -1,3 +1,4 @@
 resources:
   - oidc_secret.yaml
   - oauth.yaml
+  - self_provisioner.yaml
