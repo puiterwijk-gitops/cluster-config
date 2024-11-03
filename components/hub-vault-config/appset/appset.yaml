@@ -28,3 +28,6 @@ spec:
       destination:
         name: in-cluster
         namespace: open-cluster-management
+      syncPolicy:
+        automated:
+          prune: true
