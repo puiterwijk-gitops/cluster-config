@@ -10,7 +10,7 @@ spec:
   target:
     name: cloudflare-token
   data:
-    - secretKey: api-token
+    - secretKey: apitoken
       remoteRef:
         key: ocp_hub_config/cloudflare-token
-        property: apitoken
+        property: api-token
