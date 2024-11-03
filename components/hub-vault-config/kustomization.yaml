@@ -4,3 +4,4 @@ commonAnnotations:
 resources:
   - operator
   - appset
+  - configbase
