@@ -1,3 +1,5 @@
 resources:
+  - clusters-repo.yaml
+  - secretstore.yaml
   - serviceaccount.yaml
   - sa-crb.yaml
