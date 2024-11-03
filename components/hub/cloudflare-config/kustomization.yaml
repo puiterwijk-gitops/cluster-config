@@ -1,2 +1,6 @@
 resources:
   - apitoken.yaml
+  - polset.yaml
+  - placement.yaml
+  - placementbinding.yaml
+  - policy.yaml
