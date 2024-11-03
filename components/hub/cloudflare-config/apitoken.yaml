@@ -1,0 +1,16 @@
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: cloudflare-token
+  namespace: acm-policies
+spec:
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: gitops
+  target:
+    name: cloudflare-token
+  data:
+    - secretKey: api-token
+      remoteRef:
+        key: ocp_hub_config/cloudflare-token
+        property: api-token

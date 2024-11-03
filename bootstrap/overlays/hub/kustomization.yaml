@@ -1,5 +1,5 @@
 resources:
   - ../../base
   - github.com/puiterwijk-gitops/hub-kickstart/kickstarts/overall
-  - ../../../components/hub-vault-config/
+  - ../../../components/hub/vault-config/
   - ../../../components/lvm-storage/
