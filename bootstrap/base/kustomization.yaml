@@ -2,3 +2,4 @@ resources:
   - ../../components/public-oauth/
   - ../../components/external-secrets-operator/
   - ../../components/cert-manager/
+  - ../../components/certificates/
