@@ -28,4 +28,4 @@ spec:
                   name: cloudflare-token
                   namespace: default
                 data:
-                  api-token: '{{hub (lookup "v1" "Secret" "acm-policies" "cloudflare-token").data.api-token | protect hub}}'
+                  api-token: '{{hub (lookup "v1" "Secret" "acm-policies" "cloudflare-token").data.apitoken | protect hub}}'
