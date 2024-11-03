@@ -11,7 +11,7 @@ spec:
         repoURL: https://github.com/puiterwijk-gitops/cluster-config.git
         revision: HEAD
         directories:
-          - path: overlays/*
+          - path: bootstrap/overlays/*
   template:
     metadata:
       name: "vault-config-{{ .path.basename }}"
