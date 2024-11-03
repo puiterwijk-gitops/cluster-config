@@ -17,10 +17,13 @@ spec:
       name: "vault-config-{{ .path.basename }}"
     spec:
       project: default
-      sources:
-        - repoURL: https://github.com/puiterwijk-gitops/helm-charts.git
-          targetRevision: HEAD
-          path: vault-config/
+      source:
+        repoURL: https://github.com/puiterwijk-gitops/helm-charts.git
+        targetRevision: HEAD
+        path: vault-config/
+        helm:
+          valuesObject:
+            clusterName: "{{ .path.basename }}"
       destination:
         name: in-cluster
         namespace: open-cluster-management
