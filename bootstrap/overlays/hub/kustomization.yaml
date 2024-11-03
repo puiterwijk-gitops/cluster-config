@@ -1,4 +1,4 @@
 resources:
   - ../../base
   - github.com/puiterwijk-gitops/hub-kickstart/kickstarts/overall
-  - ../../../compunents/hub-vault-config/
+  - ../../../components/hub-vault-config/
