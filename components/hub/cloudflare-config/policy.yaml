@@ -22,7 +22,7 @@ spec:
             - complianceType: musthave
               objectDefinition:
                 apiVersion: v1
-                kind: secret
+                kind: Secret
                 type: Opaque
                 metadata:
                   name: cloudflare-token
