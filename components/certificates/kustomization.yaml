@@ -1,2 +1,5 @@
 resources:
   - wildcard.yaml
+  - ingresscontroller.yaml
+  - api.yaml
+  - apiserver.yaml
