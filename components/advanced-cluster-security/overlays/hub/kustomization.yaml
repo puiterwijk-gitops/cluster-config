@@ -1,5 +1,6 @@
 resources:
   - ../../base
+  - central/
 
 commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true

@@ -1,0 +1,4 @@
+resources:
+  - namespace.yaml
+  - central.yaml
+  - configuration.yaml

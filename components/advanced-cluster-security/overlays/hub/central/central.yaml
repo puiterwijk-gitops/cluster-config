@@ -1,0 +1,56 @@
+apiVersion: platform.stackrox.io/v1alpha1
+kind: Central
+metadata:
+  name: stackrox-central-services
+  namespace: rhacs
+spec:
+  monitoring:
+    openShift:
+      enabled: true
+  network:
+    policies: Enabled
+  central:
+    adminPasswordGenerationDisabled: false
+    declarativeConfiguration:
+      configMaps:
+        - name: declarative-configurations
+    notifierSecretEncryption:
+      enabled: true
+    exposure:
+      route:
+        enabled: true
+        host: acs.apps.primary.ocp.puiterwijk.org
+    monitoring:
+      exposureEndpoint: Enabled
+    telemetry:
+      enabled: false
+    db:
+      isEnabled: Default
+      persistence:
+        persistentVolumeClaim:
+          claimName: central-db
+    persistence:
+      persistentVolumeClaim:
+        claimName: stackrox-db
+    egress:
+      connectivityPolicy: Online
+    scannerV4:
+      db:
+        persistence:
+          persistentVolumeClaim:
+            claimName: scanner-v4-db
+      indexer:
+        scaling:
+          autoScaling: Disabled
+          replicas: 1
+      matcher:
+        scaling:
+          autoScaling: Disabled
+          replicas: 1
+      scannerComponent: Enabled
+    scanner:
+      scannerComponent: Enabled
+      analyzer:
+        scaling:
+          autoScaling: Disabled
+          replicas: 1
