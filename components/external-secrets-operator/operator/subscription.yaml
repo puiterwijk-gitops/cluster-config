@@ -3,9 +3,6 @@ kind: Subscription
 metadata:
   name: external-secrets-operator
   namespace: openshift-operators
-  metadata:
-    annotations:
-      argocd.argoproj.io/sync-wave: "-1"
 spec:
   channel: stable
   installPlanApproval: Automatic

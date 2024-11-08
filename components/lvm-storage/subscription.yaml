@@ -3,9 +3,6 @@ kind: Subscription
 metadata:
   name: lvms-operator
   namespace: openshift-storage
-  metadata:
-    annotations:
-      argocd.argoproj.io/sync-wave: "-1"
 spec:
   installPlanApproval: Automatic
   name: lvms-operator

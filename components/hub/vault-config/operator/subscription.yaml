@@ -3,9 +3,6 @@ kind: Subscription
 metadata:
   name: vault-config-operator
   namespace: vault-config-operator
-  metadata:
-    annotations:
-      argocd.argoproj.io/sync-wave: "-1"
 spec:
   channel: alpha
   installPlanApproval: Automatic

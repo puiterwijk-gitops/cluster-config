@@ -1,6 +1,3 @@
-commonAnnotations:
-  argocd.argoproj.io/sync-wave: "-1"
-
 resources:
   - namespace.yaml
   - operatorgroup.yaml
