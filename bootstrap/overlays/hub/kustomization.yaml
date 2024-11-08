@@ -1,7 +1,9 @@
+commonAnnotations:
+  argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+
 resources:
   - ../../base
   - github.com/puiterwijk-gitops/hub-kickstart/kickstarts/overall
   - ../../../components/hub/vault-config/
   - ../../../components/hub/cloudflare-config/
   - ../../../components/lvm-storage/
-  #- ../../../components/advanced-cluster-security/overlays/hub/
