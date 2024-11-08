@@ -1,0 +1,3 @@
+resources:
+  - ../../base
+  - ../../../components/advanced-cluster-security/overlays/central/

@@ -7,7 +7,7 @@ data:
   auth-provider-osauth: |
     name: openshift
     minimumRole: None
-    uiEndpoint: acs.apps.primary.ocp.puiterwijk.org
+    uiEndpoint: "acs.${SUB_DOMAIN}"
     groups:
     - key: groups
       value: cluster-admins
