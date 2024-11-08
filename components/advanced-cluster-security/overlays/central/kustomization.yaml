@@ -1,6 +1,8 @@
 resources:
   - ../../base
-  - central/
+  - central.yaml
+  - configuration.yaml
+  - namespace.yaml
 
 commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
