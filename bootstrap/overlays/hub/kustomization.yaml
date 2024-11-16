@@ -7,3 +7,4 @@ resources:
   - ../../../components/hub/vault-config/
   - ../../../components/hub/cloudflare-config/
   - ../../../components/lvm-storage/
+  - ../../../components/devspaces/
