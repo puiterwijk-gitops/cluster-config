@@ -19,6 +19,9 @@ spec:
       enabled: false
     db:
       isEnabled: Default
+      resources:
+        requests:
+          memory: "128Mi"
       persistence:
         persistentVolumeClaim:
           claimName: central-db
