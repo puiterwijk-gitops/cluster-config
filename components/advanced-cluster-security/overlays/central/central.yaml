@@ -4,9 +4,6 @@ metadata:
   name: stackrox-central-services
   namespace: rhacs
 spec:
-  monitoring:
-    openShift:
-      enabled: true
   network:
     policies: Enabled
   central:
@@ -28,11 +25,11 @@ spec:
     persistence:
       persistentVolumeClaim:
         claimName: stackrox-db
-    scanner:
-      scannerComponent: Disabled
-    scannerV4:
-      scannerComponent: Disabled
-      db:
-        persistence:
-          persistentVolumeClaim:
-            claimName: scanner-v4-db
+  scanner:
+    scannerComponent: Disabled
+  scannerV4:
+    scannerComponent: Disabled
+    db:
+      persistence:
+        persistentVolumeClaim:
+          claimName: scanner-v4-db
