@@ -39,7 +39,6 @@ spec:
         requests:
           cpu: "100m"
   scannerV4:
-    scannerComponent: Disabled
     db:
       persistence:
         persistentVolumeClaim:
