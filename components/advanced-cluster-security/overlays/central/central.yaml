@@ -30,8 +30,6 @@ spec:
     persistence:
       persistentVolumeClaim:
         claimName: stackrox-db
-  scanner:
-    scannerComponent: Disabled
   scannerV4:
     scannerComponent: Disabled
     db:
