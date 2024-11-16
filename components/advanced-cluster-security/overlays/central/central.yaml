@@ -30,6 +30,13 @@ spec:
     persistence:
       persistentVolumeClaim:
         claimName: stackrox-db
+  scanner:
+    analyzer:
+      scaling:
+        replicas: 1
+      resources:
+        requests:
+          cpu: "100m"
   scannerV4:
     scannerComponent: Disabled
     db:
