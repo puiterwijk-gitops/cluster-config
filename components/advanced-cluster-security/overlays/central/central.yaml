@@ -23,7 +23,7 @@ spec:
       isEnabled: Default
       resources:
         requests:
-          cpu: "100m"
+          cpu: "0"
       persistence:
         persistentVolumeClaim:
           claimName: central-db
@@ -38,7 +38,7 @@ spec:
         replicas: 1
       resources:
         requests:
-          cpu: "100m"
+          cpu: "0"
   scannerV4:
     scannerComponent: Disabled
     db:
