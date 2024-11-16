@@ -32,6 +32,7 @@ spec:
         claimName: stackrox-db
   scanner:
     analyzer:
+      autoScaling: Disabled
       scaling:
         replicas: 1
       resources:
