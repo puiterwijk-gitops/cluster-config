@@ -11,6 +11,9 @@ spec:
     declarativeConfiguration:
       configMaps:
         - name: declarative-configurations
+    resources:
+      requests:
+        cpu: "0"
     exposure:
       route:
         enabled: true
