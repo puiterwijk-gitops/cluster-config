@@ -8,3 +8,4 @@ spec:
       pools.operator.machineconfiguration.openshift.io/worker: ""
   kubeletConfig:
     maxPods: 500
+    cpuCfsQuota: false
