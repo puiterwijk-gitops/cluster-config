@@ -1,6 +1,6 @@
 resources:
   - ../../base
-  - central.yaml
+  #- central.yaml
   - configuration.yaml
   - namespace.yaml
 
