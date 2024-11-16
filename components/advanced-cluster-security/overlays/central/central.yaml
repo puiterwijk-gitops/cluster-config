@@ -31,7 +31,6 @@ spec:
       persistentVolumeClaim:
         claimName: stackrox-db
   scanner:
-    scannerComponent: Disabled
     analyzer:
       scaling:
         autoScaling: Disabled
@@ -40,8 +39,21 @@ spec:
         requests:
           cpu: "0"
   scannerV4:
-    scannerComponent: Disabled
     db:
       persistence:
         persistentVolumeClaim:
           claimName: scanner-v4-db
+    indexer:
+      scaling:
+        autoScaling: Disabled
+        replicas: 1
+      resources:
+        requests:
+          cpu: "0"
+    matcher:
+      scaling:
+        autoScaling: Disabled
+        replicas: 1
+      resources:
+        requests:
+          cpu: "0"
