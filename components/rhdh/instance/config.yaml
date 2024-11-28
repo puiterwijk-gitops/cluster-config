@@ -24,7 +24,7 @@ data:
                 - resolver: preferredUsernameMatchingUserEntityName
                 - resolver: emailMatchingUserEntityProfileEmail
     dangerouslyAllowSignInWithoutUserInCatalog: true
-    catalog:
+    disabled_catalog:
       providers:
         keycloakOrg:
           default:
