@@ -13,5 +13,7 @@ spec:
     extraEnvs:
       secrets:
         - name: secrets-rhdh
+    extraFiles:
+      mountPath: /opt/app-root/src
     route:
       subdomain: devhub
