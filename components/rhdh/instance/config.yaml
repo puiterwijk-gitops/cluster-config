@@ -1,5 +1,5 @@
-kind: ConfigMap
 apiVersion: v1
+kind: ConfigMap
 metadata:
   name: app-config-rhdh
   namespace: rhdh
@@ -8,7 +8,30 @@ data:
     app:
       title: PUiterwijk Developer Hub
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
+    auth:
+      environment: production
+      providers:
+        oidc:
+          metadataUrl: "https://sso.puiterwijk.org/realms/services"
+          clientId: "${AUTH_OIDC_CLIENT_ID}"
+          clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
+    dangerouslyAllowSignInWithoutUserInCatalog: false
+    catalog:
+      providers:
+        keycloakOrg:
+          default:
+            realm: services
+            loginRealm: services
+            baseUrl: "https://sso.puiterwijk.org/realms/services"
+            clientId: "${AUTH_OIDC_CLIENT_ID}"
+            clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
     backend:
+      auth:
+        externalAccess:
+            - type: legacy
+              options:
+                subject: legacy-default-config
+                secret: "${BACKEND_SECRET}"
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
       cors:
         origin: https://devhub.apps.primary.ocp.puiterwijk.org

@@ -1,3 +1,5 @@
 resources:
   - namespace.yaml
   - devhub.yaml
+  - secrets.yaml
+  - config.yaml

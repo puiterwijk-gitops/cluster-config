@@ -10,5 +10,8 @@ spec:
       mountPath: /opt/app-root/src
       configMaps:
         - app-config-rhdh
+    extraEnvs:
+      secrets:
+        - name: secrets-rhdh
     route:
       subdomain: devhub
