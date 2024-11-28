@@ -42,3 +42,9 @@ data:
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
       cors:
         origin: https://devhub.apps.primary.ocp.puiterwijk.org
+    permission:
+      enabled: true
+      rbac:
+        admin:
+          users:
+            - name: user:default/puiterwijk  
