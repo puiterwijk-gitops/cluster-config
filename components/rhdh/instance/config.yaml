@@ -12,9 +12,10 @@ data:
       environment: production
       providers:
         oidc:
-          metadataUrl: "https://sso.puiterwijk.org/realms/services"
-          clientId: "${AUTH_OIDC_CLIENT_ID}"
-          clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
+          production:
+            metadataUrl: "https://sso.puiterwijk.org/realms/services"
+            clientId: "${AUTH_OIDC_CLIENT_ID}"
+            clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
     dangerouslyAllowSignInWithoutUserInCatalog: false
     catalog:
       providers:
