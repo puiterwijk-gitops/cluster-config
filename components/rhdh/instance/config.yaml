@@ -19,7 +19,7 @@ data:
             metadataUrl: "https://sso.puiterwijk.org/realms/services"
             clientId: "${AUTH_OIDC_CLIENT_ID}"
             clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
-            deactive_signIn:
+            signIn:
               resolvers:
                 - resolver: preferredUsernameMatchingUserEntityName
                 - resolver: emailMatchingUserEntityProfileEmail
