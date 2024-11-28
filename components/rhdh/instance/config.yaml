@@ -19,6 +19,7 @@ data:
             metadataUrl: "https://sso.puiterwijk.org/realms/services"
             clientId: "${AUTH_OIDC_CLIENT_ID}"
             clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
+            prompt: auto
             signIn:
               resolvers:
                 - resolver: preferredUsernameMatchingUserEntityName
@@ -34,7 +35,7 @@ data:
             clientId: "${AUTH_OIDC_CLIENT_ID}"
             clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
             schedule:
-              frequency: { minutes: 1 }
+              frequency: { minutes: 15 }
               initialDelay: { seconds: 15 }
               timeout: { minutes: 2 }
     backend:
