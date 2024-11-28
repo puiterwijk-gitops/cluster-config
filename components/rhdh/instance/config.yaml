@@ -1,0 +1,14 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: app-config-rhdh
+  namespace: rhdh
+data:
+  app-config-rhdh.yaml: |
+    app:
+      title: PUiterwijk Developer Hub
+      baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
+    backend:
+      baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
+      cors:
+        origin: https://devhub.apps.primary.ocp.puiterwijk.org
