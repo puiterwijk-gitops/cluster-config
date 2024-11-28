@@ -40,8 +40,3 @@ data:
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
       cors:
         origin: https://devhub.apps.primary.ocp.puiterwijk.org
-
-  dynamic-plugins.yaml: |
-    plugins:
-    - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-rbac
-      disabled: false

@@ -3,3 +3,4 @@ resources:
   - devhub.yaml
   - secrets.yaml
   - config.yaml
+  - plugins.yaml
