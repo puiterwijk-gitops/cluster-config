@@ -33,6 +33,8 @@ data:
             baseUrl: "https://sso.puiterwijk.org/realms/services"
             clientId: "${AUTH_OIDC_CLIENT_ID}"
             clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
+            frequency: { minutes: 1 }
+            initialDelay: { seconds: 15 }
     backend:
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
       cors:
