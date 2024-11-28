@@ -36,6 +36,7 @@ data:
             schedule:
               frequency: { minutes: 1 }
               initialDelay: { seconds: 15 }
+              timeout: { minutes: 2 }
     backend:
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
       cors:
