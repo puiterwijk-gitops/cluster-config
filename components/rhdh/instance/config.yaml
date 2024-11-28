@@ -8,6 +8,7 @@ data:
     app:
       title: PUiterwijk Developer Hub
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
+    signInPage: oidc
     auth:
       environment: production
       providers:
