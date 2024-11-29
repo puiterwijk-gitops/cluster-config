@@ -47,5 +47,4 @@ data:
       rbac:
         admin:
           users:
-            #- name: user:default/puiterwijk
-            - name: user:default/notme
+            - name: group:default/devhub-admins
