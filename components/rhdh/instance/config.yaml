@@ -48,3 +48,5 @@ data:
         admin:
           users:
             - name: group:default/devhub-admins
+          superUsers:
+            - name: group:default/devhub-admins
