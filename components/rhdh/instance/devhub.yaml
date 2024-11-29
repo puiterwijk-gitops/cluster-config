@@ -11,6 +11,7 @@ spec:
         - name: config-puiterwijk-general
         - name: config-puiterwijk-catalog
         - name: config-puiterwijk-homepage
+        - name: config-puiterwijk-proxy
     dynamicPluginsConfigMapName: plugins-rhdh
     extraEnvs:
       secrets:

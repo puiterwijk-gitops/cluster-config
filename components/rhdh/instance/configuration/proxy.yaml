@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-puiterwijk-proxy
+  namespace: rhdh
+data:
+  config-puiterwijk-proxy.yaml: |
+    proxy:
+      endpoints:
+        '/developer-hub':
+          target: https://raw.githubusercontent.com/
+          pathRewrite:
+            '^/api/proxy/developer-hub': 'puiterwijk-gitops/catalog/refs/heads/main/customization_data/quickaccess.json'
+          changeOrigin: true
+          secure: true
