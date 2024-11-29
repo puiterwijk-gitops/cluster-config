@@ -17,6 +17,8 @@ data:
               - url: https://github.com/puiterwijk-gitops/
                 title: "PUiterwijk GitOps"
     signInPage: oidc
+    organization:
+      name: PUiterwijk
     auth:
       environment: production
       session:
