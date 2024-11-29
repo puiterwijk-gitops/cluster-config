@@ -51,6 +51,7 @@ data:
                 ${GITHUB_PRIVATE_KEY_FILE}
     dangerouslyAllowSignInWithoutUserInCatalog: true
     catalog:
+      orphanStrategy: delete
       import:
         entityFilename: catalog-info.yaml
         pullRequestBranchName: backstage-integration
