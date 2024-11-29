@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rbac-policies
+  namespace: rhdh
+data:
+  rbac-policies.csv: |
+    g, group:default/devhub-admins, role:default/superadmins
+
+    # General stuff
+    p, role:default/superadmins, catalog-entity, read, allow
+    p, role:default/superadmins, catalog.entity.create, create, allow
+
+    # RBAC admin
+    p, role:default/superadmins, policy-entity, read, allow
+    # Explicitly no create/delete/update for policy-entity.
+    # Policies are managed here.
+    p, role:default/superadmins, catalog-entity, read, allow
+  rbac-conditional-policies.yaml: ""

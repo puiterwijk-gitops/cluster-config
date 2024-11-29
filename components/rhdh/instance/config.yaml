@@ -45,10 +45,9 @@ data:
     permission:
       enabled: true
       rbac:
+        policies-csv-file: /opt/app-root/src/rbac-policies.csv
+        conditionalPoliciesFile: /opt/app-root/src/rbac-conditional-policies.yaml
+        policyFileReload: true
         admin:
           users:
             - name: group:default/devhub-admins
-            - name: user:default/puiterwijk
-          superUsers:
-            - name: group:default/devhub-admins
-            - name: user:default/puiterwijk
