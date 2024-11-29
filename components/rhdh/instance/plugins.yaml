@@ -19,12 +19,20 @@ data:
       disabled: false
     - package: ./dynamic-plugins/dist/backstage-plugin-github-issues
       disabled: false
+    - package: ./dynamic-plugins/dist/roadiehq-backstage-plugin-github-insights
+      disabled: false
+    - package: ./dynamic-plugins/dist/roadiehq-backstage-plugin-github-pull-requests
+      disabled: false
+    - package: ./dynamic-plugins/dist/roadiehq-backstage-plugin-security-insights
+      disabled: false
     #- package: ./dynamic-plugins/dist/backstage-plugin-kubernetes-backend-dynamic
     #  disabled: false
     #- package: ./dynamic-plugins/dist/backstage-plugin-kubernetes
     #  disabled: false
     #- package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-topology
     #  disabled: false
+    - package: ./dynamic-plugins/dist/backstage-community-plugin-redhat-argocd
+      disabled: false
     - package: ./dynamic-plugins/dist/backstage-plugin-azure-devops-backend-dynamic
       disabled: false
     - package: ./dynamic-plugins/dist/backstage-plugin-azure-devops
@@ -32,14 +40,6 @@ data:
     - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-bulk-import-backend-dynamic
       disabled: false
     - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-bulk-import
-      disabled: false
-    - package: ./dynamic-plugins/dist/backstage-plugin-techdocs-backend-dynamic
-      disabled: false
-    - package: ./dynamic-plugins/dist/backstage-plugin-techdocs
-      disabled: false
-    - package: ./dynamic-plugins/dist/janus-idp-backstage-scaffolder-backend-module-quay-dynamic
-      disabled: false
-    - package: ./dynamic-plugins/dist/janus-idp-backstage-scaffolder-backend-module-regex-dynamic
       disabled: false
     #- package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-aap-backend-dynamic
     #  disabled: false
