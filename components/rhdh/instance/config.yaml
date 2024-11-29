@@ -10,7 +10,7 @@ data:
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
       routes:
         bindings:
-          scaffolder.registerComponent: false  
+          scaffolder.registerComponent: false
       support:
         url: "https://puiterwijk.org/"
         items:
@@ -22,8 +22,6 @@ data:
     signInPage: oidc
     organization:
       name: PUiterwijk
-    techRadar:
-      url: https://github.com/puiterwijk-gitops/catalog/blob/main/techradar.json
     auth:
       environment: production
       session:
@@ -64,13 +62,6 @@ data:
         pullRequestBranchName: backstage-integration
       rules:
         - allow: [Component, System, Group, Resource, Location, Template, API]
-      locations:
-        #- type: url
-        #  target: https://github.com/janus-idp/backstage-showcase/blob/main/catalog-entities/all.yaml
-        #- type: url
-        #  target: https://github.com/redhat-developer/red-hat-developer-hub-software-templates/blob/main/templates.yaml
-        #- type: url
-        #  target: https://github.com/puiterwijk-gitops/catalog/blob/main/index.yaml
       providers:
         github:
           providerId:
@@ -98,9 +89,6 @@ data:
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
       cors:
         origin: https://devhub.apps.primary.ocp.puiterwijk.org
-      reading:
-        allow:
-          - host: '*' 
     permission:
       enabled: true
       rbac:
