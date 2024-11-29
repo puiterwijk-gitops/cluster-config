@@ -48,6 +48,3 @@ data:
       disabled: false
     - package: ./dynamic-plugins/dist/backstage-plugin-tech-radar
       disabled: false
-    # TECH PREVIEW
-    - package: ./dynamic-plugins/dist/backstage-plugin-catalog-backend-module-logs-dynamic
-      disabled: false
