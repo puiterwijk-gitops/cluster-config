@@ -62,9 +62,19 @@ data:
         #  target: https://github.com/janus-idp/backstage-showcase/blob/main/catalog-entities/all.yaml
         #- type: url
         #  target: https://github.com/redhat-developer/red-hat-developer-hub-software-templates/blob/main/templates.yaml
-        - type: url
-          target: https://github.com/puiterwijk-gitops/catalog/blob/main/index.yaml
+        #- type: url
+        #  target: https://github.com/puiterwijk-gitops/catalog/blob/main/index.yaml
       providers:
+        github:
+          gitops:
+            organization: 'puiterwijk-gitops'
+            catalogPath: '/catalog-info.yaml'
+            filters:
+              branch: 'main'
+              repository: 'catalog'
+            schedule:
+              frequency: { minutes: 15 }
+              timeout: { minutes: 3 }
         keycloakOrg:
           default:
             baseUrl: "https://sso.puiterwijk.org"
