@@ -46,5 +46,6 @@ data:
       enabled: true
       rbac:
         admin:
-          users: []
+          users:
             #- name: user:default/puiterwijk
+            - name: user:default/notme
