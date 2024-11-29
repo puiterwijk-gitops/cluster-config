@@ -86,3 +86,11 @@ data:
         admin:
           users:
             - name: group:default/devhub-admins
+    kubernetes:
+      frontend:
+        podDelete:
+          enabled: true
+      serviceLocatorMethod:
+        type: 'catalogRelation'
+      clusterLocatorMethods:
+        - type: 'catalog'
