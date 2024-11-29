@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: app-config-rhdh
+  name: config-puiterwijk-general
   namespace: rhdh
 data:
-  app-config-rhdh.yaml: |
+  config-puiterwijk-general.yaml: |
     app:
       title: PUiterwijk Developer Hub
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
@@ -52,39 +52,6 @@ data:
               webhookSecret: "${GITHUB_WEBHOOK_SECRET}"
               privateKey: |
                 ${GITHUB_PRIVATE_KEY_FILE}
-    dangerouslyAllowSignInWithoutUserInCatalog: true
-    catalog:
-      orphanStrategy: delete
-      readonly: true
-      processingInterval: { minutes: 15 }
-      import:
-        entityFilename: catalog-info.yaml
-        pullRequestBranchName: backstage-integration
-      rules:
-        - allow: [Component, System, Group, Resource, Location, Template, API]
-      providers:
-        github:
-          providerId:
-            organization: 'puiterwijk-gitops'
-            catalogPath: '/catalog-info.yaml'
-            filters:
-              branch: 'main'
-              repository: 'catalog'
-            schedule:
-              frequency: { minutes: 15 }
-              timeout: { minutes: 3 }
-              initialDelay: { minutes: 1 }
-        keycloakOrg:
-          default:
-            baseUrl: "https://sso.puiterwijk.org"
-            realm: services
-            loginRealm: services
-            clientId: "${AUTH_OIDC_CLIENT_ID}"
-            clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
-            schedule:
-              frequency: { minutes: 15 }
-              initialDelay: { seconds: 15 }
-              timeout: { minutes: 2 }
     backend:
       baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
       cors:

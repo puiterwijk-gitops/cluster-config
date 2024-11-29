@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-puiterwijk-catalog
+  namespace: rhdh
+data:
+  config-puiterwijk-catalog.yaml: |
+    catalog:
+      orphanStrategy: delete
+      readonly: true
+      processingInterval: { minutes: 15 }
+      import:
+        entityFilename: catalog-info.yaml
+        pullRequestBranchName: backstage-integration
+      rules:
+        - allow: [Component, System, Group, Resource, Location, Template, API]
+      providers:
+        github:
+          providerId:
+            organization: 'puiterwijk-gitops'
+            catalogPath: '/catalog-info.yaml'
+            filters:
+              branch: 'main'
+              repository: 'catalog'
+            schedule:
+              frequency: { minutes: 15 }
+              timeout: { minutes: 3 }
+              initialDelay: { minutes: 1 }
+        keycloakOrg:
+          default:
+            baseUrl: "https://sso.puiterwijk.org"
+            realm: services
+            loginRealm: services
+            clientId: "${AUTH_OIDC_CLIENT_ID}"
+            clientSecret: "${AUTH_OIDC_CLIENT_SECRET}"
+            schedule:
+              frequency: { minutes: 15 }
+              initialDelay: { seconds: 15 }
+              timeout: { minutes: 2 }
