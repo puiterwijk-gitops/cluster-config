@@ -43,8 +43,8 @@ data:
       cors:
         origin: https://devhub.apps.primary.ocp.puiterwijk.org
     permission:
-      enabled: true
+      enabled: false
       rbac:
         admin:
           users:
-            - name: user:default/puiterwijk  
+            - name: user:default/puiterwijk
