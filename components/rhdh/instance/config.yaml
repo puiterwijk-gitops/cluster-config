@@ -68,7 +68,7 @@ data:
         #  target: https://github.com/puiterwijk-gitops/catalog/blob/main/index.yaml
       providers:
         github:
-          gitops:
+          providerId:
             organization: 'puiterwijk-gitops'
             catalogPath: '/catalog-info.yaml'
             filters:
