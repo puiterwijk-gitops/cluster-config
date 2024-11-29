@@ -48,5 +48,7 @@ data:
         admin:
           users:
             - name: group:default/devhub-admins
+            - name: user:default/puiterwijk
           superUsers:
             - name: group:default/devhub-admins
+            - name: user:default/puiterwijk
