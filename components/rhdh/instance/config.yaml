@@ -52,6 +52,7 @@ data:
     dangerouslyAllowSignInWithoutUserInCatalog: true
     catalog:
       orphanStrategy: delete
+      readonly: true
       import:
         entityFilename: catalog-info.yaml
         pullRequestBranchName: backstage-integration
