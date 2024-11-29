@@ -6,7 +6,45 @@ metadata:
 data:
   dynamic-plugins.yaml: |
     plugins:
+    - package: ./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-github-dynamic
+      disabled: false
     - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-rbac
       disabled: false
     - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-keycloak-backend-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-github-actions
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-github-issues
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-kubernetes-backend-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-kubernetes
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-topology
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-azure-devops-backend-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-azure-devops
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-bulk-import-backend-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-bulk-import
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-techdocs-backend-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-techdocs
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-scaffolder-backend-module-quay-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-scaffolder-backend-module-regex-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-aap-backend-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-keycloak-backend-dynamic
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-tekton
+      disabled: false
+    - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-quay
+      disabled: false
+    - package: ./dynamic-plugins/dist/backstage-plugin-tech-radar
       disabled: false
