@@ -10,8 +10,8 @@ data:
         '/developer-hub':
           target: https://raw.githubusercontent.com/
           pathRewrite:
-            '^/api/proxy/developer-hub/tech-radar': '/puiterwijk-gitops/catalog/refs/heads/main/customization_data/techradar.json''
-            '^/api/proxy/developer-hub/learning-paths': '/puiterwijk-gitops/catalog/refs/heads/main/customization_data/learning.json''
+            '^/api/proxy/developer-hub/tech-radar': '/puiterwijk-gitops/catalog/refs/heads/main/customization_data/techradar.json'
+            '^/api/proxy/developer-hub/learning-paths': '/puiterwijk-gitops/catalog/refs/heads/main/customization_data/learning.json'
             '^/api/proxy/developer-hub': '/puiterwijk-gitops/catalog/refs/heads/main/customization_data/quickaccess.json'
           changeOrigin: true
           secure: true
