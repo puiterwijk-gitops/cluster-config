@@ -24,6 +24,21 @@ data:
               resolvers:
                 - resolver: preferredUsernameMatchingUserEntityName
                 - resolver: emailMatchingUserEntityProfileEmail
+        github:
+          production:
+            clientId: "${GITHUB_CLIENT_ID}"
+            clientSecret: "${GITHUB_CLIENT_SECRET}"
+    integrations:
+      github:
+        - host: "${GITHUB_HOST_DOMAIN}"
+          apps:
+            - appId: "${GITHUB_APP_ID}"
+              clientId: "${GITHUB_CLIENT_ID}"
+              clientSecret: "${GITHUB_CLIENT_SECRET}"
+              webhookUrl: "${GITHUB_WEBHOOK_URL}"
+              webhookSecret: "${GITHUB_WEBHOOK_SECRET}"
+              privateKey: |
+                ${GITHUB_PRIVATE_KEY_FILE}
     dangerouslyAllowSignInWithoutUserInCatalog: true
     catalog:
       import:
