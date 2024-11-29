@@ -1,7 +1,9 @@
 resources:
   - configuration/
+  - certificate.yaml
   - namespace.yaml
   - devhub.yaml
   - secrets.yaml
   - plugins.yaml
   - policies.yaml
+  - route.yaml

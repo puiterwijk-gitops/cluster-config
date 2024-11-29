@@ -21,7 +21,7 @@ spec:
       configMaps:
         - name: rbac-policies
     route:
-      subdomain: devhub
+      enabled: false
   deployment:
     patch:
       spec:
