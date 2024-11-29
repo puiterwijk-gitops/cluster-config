@@ -53,6 +53,7 @@ data:
     catalog:
       orphanStrategy: delete
       readonly: true
+      processingInterval: { minutes: 15 }
       import:
         entityFilename: catalog-info.yaml
         pullRequestBranchName: backstage-integration
