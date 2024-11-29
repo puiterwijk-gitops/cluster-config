@@ -14,7 +14,7 @@ data:
     # RBAC admin
     p, role:default/superadmins, policy-entity, read, allow
     # Explicitly no create/delete/update for policy-entity: policies are managed here.
-    p, role:default/superadmins, catalog-entity, read, allow
+
     p, role:default/superadmins, catalog.location.read, read, allow
     p, role:default/superadmins, catalog.location.create, create, allow
     p, role:default/superadmins, catalog.location.delete, delete, allow
