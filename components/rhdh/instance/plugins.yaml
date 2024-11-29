@@ -5,6 +5,9 @@ metadata:
   namespace: rhdh
 data:
   dynamic-plugins.yaml: |
+    includes:
+      - dynamic-plugins.default.yaml
+
     plugins:
     - package: ./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-github-dynamic
       disabled: false
@@ -48,3 +51,7 @@ data:
       disabled: false
     - package: ./dynamic-plugins/dist/backstage-plugin-tech-radar
       disabled: false
+
+    # Disable built-in telemetry
+    - package: './dynamic-plugins/dist/janus-idp-backstage-plugin-analytics-provider-segment'
+      disabled: true
