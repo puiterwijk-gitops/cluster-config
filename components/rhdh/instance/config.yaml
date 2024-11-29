@@ -22,6 +22,8 @@ data:
     signInPage: oidc
     organization:
       name: PUiterwijk
+    techRadar:
+      url: https://github.com/puiterwijk-gitops/catalog/blob/main/techradar.json
     auth:
       environment: production
       session:
