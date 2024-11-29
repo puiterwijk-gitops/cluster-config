@@ -10,6 +10,7 @@ spec:
       configMaps:
         - name: config-puiterwijk-general
         - name: config-puiterwijk-catalog
+        - name: config-puiterwijk-homepage
     dynamicPluginsConfigMapName: plugins-rhdh
     extraEnvs:
       secrets:
