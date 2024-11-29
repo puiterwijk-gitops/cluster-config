@@ -2,3 +2,4 @@ resources:
   - general.yaml
   - catalog.yaml
   - homepage.yaml
+  - proxy.yaml
