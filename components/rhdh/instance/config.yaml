@@ -75,6 +75,7 @@ data:
             schedule:
               frequency: { minutes: 15 }
               timeout: { minutes: 3 }
+              initialDelay: { minutes: 1 }
         keycloakOrg:
           default:
             baseUrl: "https://sso.puiterwijk.org"
