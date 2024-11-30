@@ -19,6 +19,7 @@ data:
           providerId:
             organization: 'puiterwijk-gitops'
             catalogPath: '/catalog-info.yaml'
+            validateLocationsExist: true
             filters:
               branch: 'main'
               repository: '.*'
