@@ -79,4 +79,12 @@ data:
       serviceLocatorMethod:
         type: 'catalogRelation'
       clusterLocatorMethods:
-        - type: 'catalog'
+        - type: 'config'
+          clusters:
+            - name: 'ocp-hub'
+              title: "Hub Cluster"
+              url: "https://kubernets.default.svc.cluster.local"
+              authProvider: "serviceAccount"
+              dashboardApp: openshift
+              dashboardUrl: "https://console-openshift-console.apps.primary.ocp.puiterwijk.org/"
+              caFile: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
