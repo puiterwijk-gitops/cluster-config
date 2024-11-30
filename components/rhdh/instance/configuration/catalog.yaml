@@ -13,7 +13,7 @@ data:
         entityFilename: catalog-info.yaml
         pullRequestBranchName: backstage-integration
       rules:
-        - allow: [Component, System, Group, Resource, Location, Template, API]
+        - allow: [Component, System, Resource, Location, Template, API]
       providers:
         github:
           providerId:
