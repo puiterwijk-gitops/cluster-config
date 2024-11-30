@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: developer-hub
+  namespace: rhdh
   annotations:
     route.openshift.io/termination: "edge"
 spec:
