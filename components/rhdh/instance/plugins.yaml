@@ -59,3 +59,6 @@ data:
     # Disable built-in telemetry
     - package: './dynamic-plugins/dist/janus-idp-backstage-plugin-analytics-provider-segment'
       disabled: true
+
+    - package: ./dynamic-plugins/dist/backstage-plugin-catalog-backend-module-logs-dynamic
+      disabled: false
