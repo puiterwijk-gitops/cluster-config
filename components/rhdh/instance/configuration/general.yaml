@@ -46,6 +46,7 @@ data:
         - host: "${GITHUB_HOST_DOMAIN}"
           apps:
             - appId: "${GITHUB_APP_ID}"
+              allowedInstallationOwners: ['puiterwijk-gitops']
               clientId: "${GITHUB_CLIENT_ID}"
               clientSecret: "${GITHUB_CLIENT_SECRET}"
               webhookUrl: "${GITHUB_WEBHOOK_URL}"
