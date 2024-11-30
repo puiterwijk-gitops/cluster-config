@@ -21,7 +21,7 @@ data:
             catalogPath: '/catalog-info.yaml'
             filters:
               branch: 'main'
-              repository: 'catalog'
+              repository: '.*'
             schedule:
               frequency: { minutes: 15 }
               timeout: { minutes: 3 }
