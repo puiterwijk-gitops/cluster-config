@@ -5,22 +5,20 @@ metadata:
   namespace: rhdh
 data:
   rbac-policies.csv: |
+    # Super admins. Note that everything is just read, since modifying happens in git.
     g, group:default/devhub-admins, role:default/superadmins
-
-    # General stuff
     p, role:default/superadmins, catalog-entity, read, allow
-    p, role:default/superadmins, catalog.entity.create, create, allow
-
-    # RBAC admin
     p, role:default/superadmins, policy-entity, read, allow
-    # Explicitly no create/delete/update for policy-entity: policies are managed here.
-
     p, role:default/superadmins, catalog.location.read, read, allow
-    p, role:default/superadmins, catalog.location.create, create, allow
-    p, role:default/superadmins, catalog.location.delete, delete, allow
     p, role:default/superadmins, scaffolder.task.cancel, use, allow
     p, role:default/superadmins, scaffolder.task.create, create, allow
     p, role:default/superadmins, scaffolder.task.read, read, allow
     p, role:default/superadmins, scaffolder-template, read, allow
     p, role:default/superadmins, scaffolder-action, use, allow
+    
+    # General users
+    g, group:default/devhub-users, role:default/users
+    p, role:default/users, catalog-entity, read, allow
+    p, role:default/users, scaffolder-template, read, allow
+    
   rbac-conditional-policies.yaml: ""
