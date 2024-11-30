@@ -7,7 +7,7 @@ data:
   config-puiterwijk-general.yaml: |
     app:
       title: PUiterwijk Developer Hub
-      baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
+      baseUrl: https://devhub.puiterwijk.org
       routes:
         bindings:
           scaffolder.registerComponent: false
@@ -53,9 +53,9 @@ data:
               privateKey: |
                 ${GITHUB_PRIVATE_KEY_FILE}
     backend:
-      baseUrl: https://devhub.apps.primary.ocp.puiterwijk.org
+      baseUrl: https://devhub.puiterwijk.org
       cors:
-        origin: https://devhub.apps.primary.ocp.puiterwijk.org
+        origin: https://devhub.puiterwijk.org
     permission:
       enabled: true
       rbac:
