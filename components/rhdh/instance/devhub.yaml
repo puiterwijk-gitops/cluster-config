@@ -28,6 +28,7 @@ spec:
         replicas: 1
         template:
           spec:
+            automountServiceAccountToken: true
             volumes:
               - $patch: replace
                 name: dynamic-plugins-root
