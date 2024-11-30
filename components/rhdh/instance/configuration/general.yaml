@@ -60,9 +60,9 @@ data:
       auth:
         externalAccess:
           - type: legacy
-              options:
-                subject: legacy-default-config
-                secret: "${LEGACY_BACKEND_SECRET}"
+            options:
+              subject: legacy-default-config
+              secret: "${LEGACY_BACKEND_SECRET}"
     permission:
       enabled: true
       rbac:
