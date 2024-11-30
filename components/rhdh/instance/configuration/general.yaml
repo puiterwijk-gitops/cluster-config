@@ -57,6 +57,12 @@ data:
       baseUrl: https://devhub.puiterwijk.org
       cors:
         origin: https://devhub.puiterwijk.org
+      auth:
+        externalAccess:
+          - type: legacy
+              options:
+                subject: legacy-default-config
+                secret: "${LEGACY_BACKEND_SECRET}"
     permission:
       enabled: true
       rbac:
