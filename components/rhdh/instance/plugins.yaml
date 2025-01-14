@@ -12,7 +12,7 @@ data:
     - package: ./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-github-dynamic
       disabled: false
     - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-rbac
-      disabled: false
+      disabled: true
     - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-keycloak-backend-dynamic
       disabled: false
     - package: ./dynamic-plugins/dist/backstage-plugin-github-actions
